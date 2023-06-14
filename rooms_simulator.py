@@ -46,6 +46,7 @@ _new_objects = analog_input(
     properties={"units": "degreesCelsius"},
     description="Room 1 Temperature",
     presentValue=18.0,
+    covIncrement=0.1
 )
 analog_input(
     instance=20,
@@ -53,6 +54,7 @@ analog_input(
     properties={"units": "degreesCelsius"},
     description="Room 2 Temperature",
     presentValue=19.0,
+    covIncrement=0.1
 )
 analog_output(
     instance=10,
