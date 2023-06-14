@@ -43,18 +43,16 @@ device = lite(ip=args["address"], port=args["port"], deviceId=args["deviceId"])
 _new_objects = analog_input(
     instance=10,
     name="RoomOneTemperature",
-    properties={"units": "degreesCelsius"},
+    properties={"units": "degreesCelsius", 'covIncrement': 0.15},
     description="Room 1 Temperature",
     presentValue=18.0,
-    covIncrement=0.1
 )
 analog_input(
     instance=20,
     name="RoomTwoTemperature",
-    properties={"units": "degreesCelsius"},
+    properties={"units": "degreesCelsius", 'covIncrement': 0.15},
     description="Room 2 Temperature",
     presentValue=19.0,
-    covIncrement=0.1
 )
 analog_output(
     instance=10,
